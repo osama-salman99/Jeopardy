@@ -4,6 +4,7 @@ function createGame() {
         alert("Nickname is invalid");
         return;
     }
+    // TODO: Create game
 }
 
 function joinGame() {
@@ -12,6 +13,7 @@ function joinGame() {
         alert("Nickname is invalid");
         return;
     }
+    // TODO: Show game id screen
 }
 
 function isValid(nickname) {

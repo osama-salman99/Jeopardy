@@ -6,7 +6,7 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
     app.quit();
 }
 
-const createWindow = () => {
+function createWindow() {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
         width: 800,
@@ -21,7 +21,7 @@ const createWindow = () => {
 
     // Maximize window
     mainWindow.maximize();
-};
+}
 
 function executeAsync(func) {
     setTimeout(func, 0);
