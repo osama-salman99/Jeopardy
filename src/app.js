@@ -11,10 +11,14 @@ function createWindow() {
     const mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
     // and load the index.html of the app.
     // noinspection JSIgnoredPromiseFromCall
     mainWindow.loadFile(path.join(__dirname, 'index.html'));
+    mainWindow.toggleDevTools();
 
     // Hide window bar
     mainWindow.setMenuBarVisibility(false);
