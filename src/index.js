@@ -1,3 +1,7 @@
+navigator.mediaDevices.getUserMedia({video: true}).then(function (mediaStream) {
+    console.log(mediaStream.getVideoTracks()[0])
+})
+
 window.history.pushState({
     "html": document.getElementById("content").innerHTML,
     "pageTitle": document.title
